@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bgd" >
+
+    <RelativeLayout
+        android:id="@+id/top"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/mainbodytop"
+        android:gravity="bottom|left" >
+
+        <TextView
+            android:id="@+id/totalUser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="15dip"
+            android:layout_marginBottom="5dip"
+            android:text="@string/info"
+            />
+
+    </RelativeLayout>
+
+    <ExpandableListView
+        android:id="@+id/userlist"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:drawSelectorOnTop="false"
+        android:groupIndicator="@null"
+        android:layout_below="@id/top"
+        />
+
+    <RelativeLayout
+        android:id="@+id/main_head"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="3dip"
+        android:layout_marginTop="12dip"
+        >
+
+        <ImageView
+            android:id="@+id/main_self_head"
+            android:src="@drawable/icon"
+            android:layout_width="36dip"
+            android:layout_height="36dip"
+            android:layout_centerInParent="true" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/main_head"
+        android:layout_toRightOf="@id/main_head"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/myname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dip"
+            android:textColor="@color/black"
+            android:textSize="15dip"
+            android:text="局域网聊天"
+            />
+
+        <TextView
+            android:id="@+id/mymood"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dip"
+            android:text="127.0.0.1"
+            android:textColor="@color/darkgray"
+            />
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/bottomButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/top"
+        android:layout_alignRight="@+id/top"
+        android:orientation="horizontal" >
+
+
+        <Button android:id="@+id/refresh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dip"
+            android:layout_marginBottom="5dip"
+            android:background="@drawable/button"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            android:text="刷新" />
+
+
+    </LinearLayout>
+
+</RelativeLayout>
