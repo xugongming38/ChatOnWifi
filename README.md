@@ -10,6 +10,6 @@ Android平台局域网聊天工具
 
  
 # 这里就多解释了，具体可以查看我的博客
-* 博客：http://blog.csdn.net/qq_25327609/article/details/72790056
+* 博客：http://blog.csdn.net/qq_25327609/article/details/77783474
  
 欢迎 star！
